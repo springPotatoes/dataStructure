@@ -5,6 +5,7 @@ typedef struct btNode {
 	struct btNode* right;
 }btNode;
 
+//Search a binary traversal tree t for a node with the value key and return a pointer to that node
 btNode* searchBST(btNode* t, char key) {
 	if (t == NULL) //When t is a terminal node
 		return NULL;	

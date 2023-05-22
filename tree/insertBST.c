@@ -15,4 +15,5 @@ int insertBST(btNode** t, char x) {
 	}
 	if (x == (*t)->data) return 0;
 	if (x < (*t)->data) return(insertBST(&((*t)->left), x));
+	return(insertBST(&((*t)->right), x);
 }
