@@ -7,20 +7,20 @@ typedef struct btNode1 {
 
 int main(void) {
 	ArrTree bt[N];
-	int tree = -1;	//공집합인 이진트리 tree 생성
+	int tree = -1;	//Create a binary tree that is a union
 	int i = 0;
 
-	//배열 bt[ ] 초기화 및 공집합 이진트리 생성
+	//Initialize array bt[ ] and create a union binary tree
 	for (int i = 0; i < N; i++) {
 		bt[i].data = '-';
 	}
 
-	//루트원소 'A' 추가
+	//Add Root Element 'A'
 	tree = 0;
 	bt[tree].data = 'A';
 	//...
 
 	i = 3;
-	bt[2 * i + 1].data = 'B';		//i = 3번 노드의 왼쪽 자식으로 노드 'B' 추가
-	bt[2 * i + 2].data = 'C';		//i = 3번 노드의 오른쪽 자식으로 노드 'C' 추가
+	bt[2 * i + 1].data = 'B';		//Add node 'B' as left child of node i = 3
+	bt[2 * i + 2].data = 'C';		//Add node 'C' as right child of node i = 3
 }
